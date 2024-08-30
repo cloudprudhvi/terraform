@@ -9,8 +9,10 @@ variable "Name" {
 }
 
 variable "env" {
+  default = "dev"
 }
 variable "team" {
+  default = "devops"
 }
 variable "public-cidr" {
   default = "10.20.0.0/24"
