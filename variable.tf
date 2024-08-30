@@ -19,5 +19,5 @@ variable "public-cidr" {
 }
 
 variable "private-cidr" {
-  default = "10.20.1.0/24"
+  default = "10.20.2.0/24"
 }
