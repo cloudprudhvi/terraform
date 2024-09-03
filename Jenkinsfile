@@ -22,13 +22,7 @@ pipeline {
 
         stage('Approval') {
             steps {
-                script {
-                    if (env.BRANCH_NAME == 'main' || env.BRANCH_NAME == 'master') {
-                        input message: 'Do you want to apply this plan?', ok: 'Apply'
-                    } else {
-                        echo 'Skipping apply because it is not the main/master branch.'
-                    }
-                }
+                input message: 'Do you want to apply this plan?', ok: 'Apply'
             }
         }
 
